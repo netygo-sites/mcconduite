@@ -12766,12 +12766,109 @@ header.main-header .header-sticky.active{
 /***   MC CONDUITE - Personnalisations marque ***/
 /************************************************/
 
+/* Couleur des liens : orange du thème au lieu du bleu par défaut de Bootstrap */
+:root{
+    --bs-link-color: #E8830C;
+    --bs-link-color-rgb: 232, 131, 12;
+    --bs-link-hover-color: #C9710A;
+    --bs-link-hover-color-rgb: 201, 113, 10;
+}
+/* Liens dans les contenus texte non couverts par un style de composant */
+.mc-legal a,
+.contact-info-item-body-title h3 a,
+.footer-working-hour-box ul li a{
+    color: var(--accent-color-2);
+    transition: color .3s ease;
+}
+.mc-legal a:hover,
+.contact-info-item-body-title h3 a:hover,
+.footer-working-hour-box ul li a:hover{
+    color: var(--accent-color);
+}
+
+/* Lien Netygo dans le footer (gras, souligné au survol) */
+.mc-netygo-link{
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+.mc-netygo-link:hover{
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Transitions pour un rétrécissement fluide */
+.navbar{ transition: padding 0.3s ease-in-out; }
+.navbar-brand img{ transition: height 0.3s ease-in-out; }
+
+/* Header sticky en verre dépoli (état épinglé) */
+header.main-header .header-sticky.active{
+    background: rgba(26, 26, 26, 0.65);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+/* Seule la barre de navigation reste collée : la top-bar disparaît */
+header.main-header .header-sticky.active .mc-topbar{
+    display: none;
+}
+/* …et la navbar rétrécit (padding + logo réduits) */
+header.main-header .header-sticky.active .navbar{
+    padding: 9px 0;
+}
+header.main-header .header-sticky.active .navbar-brand img{
+    height: 34px;
+}
+
+/* Bouton "retour en haut" — verre dépoli comme la navbar, fade-in après 50% */
+.mc-backtotop{
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    z-index: 99;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white-color);
+    font-size: 16px;
+    background: rgba(26, 26, 26, 0.55);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity .2s ease, transform .2s ease, background .3s ease, color .3s ease;
+}
+.mc-backtotop.is-visible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.mc-backtotop:hover{
+    color: var(--primary-color);
+    background: var(--accent-gradient);
+    border-color: transparent;
+}
+@media (max-width: 575px){
+    .mc-backtotop{ right: 16px; bottom: 16px; width: 44px; height: 44px; }
+}
+
 /* Désactivation du préchargeur (pas d'écran de chargement entre les pages) */
 .preloader{ display: none !important; }
 
 /* Logo header & footer (texte clair sur fond sombre) */
 .navbar-brand img{ height: 52px; width: auto; }
 .footer-logo img{ height: 56px; width: auto; }
+.footer-logo a{ display: inline-block; transition: opacity .3s ease; }
+.footer-logo a:hover{ opacity: .8; }
 
 /* Backgrounds de marque */
 .hero{ background-image: url('../images/mc/devanture.jpg'); background-position: center center; background-size: cover; }
