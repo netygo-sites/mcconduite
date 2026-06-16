@@ -1,0 +1,9 @@
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Dossiers d'outils
+.vscode/
+.idea/
