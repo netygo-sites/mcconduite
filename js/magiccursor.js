@@ -123,5 +123,5 @@ class Cursor {
         this.visibleInt = setTimeout(() => this.visible = false, this.options.visibleTimeout);
     }
 }
-// Init cursor
-const cursor = new Cursor();
+// Init cursor (speed: 0 = suivi instantané, sans latence)
+const cursor = new Cursor({ speed: 0 });
