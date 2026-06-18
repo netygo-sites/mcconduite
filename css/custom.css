@@ -396,7 +396,7 @@ a:focus{
 
 .dark-section{
 	background-color: var(--primary-color);
-	background-image: url('../images/dark-section-bg-image.png');
+	background-image: url('../images/dark-section-bg-image.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;

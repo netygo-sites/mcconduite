@@ -490,5 +490,31 @@
 		}
 	}
 	/* Contact Info List Active End */
-	
+
+	/* Hero Background Video — load only on desktop (poster-only on mobile) Start */
+	(function() {
+		var v = document.querySelector('.mc-hero-video');
+		if (!v || v.querySelector('source')) return;
+		var loadVideo = function() {
+			if (v.querySelector('source')) return;
+			['mp4', 'mov'].forEach(function(ext) {
+				var url = v.getAttribute('data-src-' + ext);
+				if (!url) return;
+				var s = document.createElement('source');
+				s.src = url;
+				s.type = ext === 'mp4' ? 'video/mp4' : 'video/quicktime';
+				v.appendChild(s);
+			});
+			v.load();
+			var p = v.play();
+			if (p && p.catch) { p.catch(function() {}); }
+		};
+		var mq = window.matchMedia('(min-width: 992px)');
+		if (mq.matches) { loadVideo(); }
+		var onChange = function(e) { if (e.matches) { loadVideo(); } };
+		if (mq.addEventListener) { mq.addEventListener('change', onChange); }
+		else if (mq.addListener) { mq.addListener(onChange); }
+	})();
+	/* Hero Background Video End */
+
 })(jQuery);
