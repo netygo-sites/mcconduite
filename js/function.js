@@ -180,6 +180,19 @@
 		$('.counter').counterUp({ delay: 6, time: 3000 });
 	}
 
+	/* Compteur note Google : 2,0 -> 4,8 en 0,5s max */
+	var $gr = $('#mcGoogleRating');
+	if($gr.length){
+		var grStart = 2, grEnd = 4.8, grDur = 1000, grT0 = null;
+		var grStep = function(ts){
+			if(!grT0) grT0 = ts;
+			var p = Math.min((ts - grT0) / grDur, 1);
+			$gr.text((grStart + (grEnd - grStart) * p).toFixed(1).replace('.', ','));
+			if(p < 1) requestAnimationFrame(grStep);
+		};
+		requestAnimationFrame(grStep);
+	}
+
 	/* Image Reveal Animation */
 	if ($('.reveal').length) {
         gsap.registerPlugin(ScrollTrigger);
