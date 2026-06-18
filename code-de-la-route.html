@@ -32,6 +32,29 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<!-- Schema FAQ/Breadcrumb -->
+	<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mcconduite.fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Permis B", "item": "https://mcconduite.fr/permis-b.html" },
+      { "@type": "ListItem", "position": 3, "name": "Code de la route", "item": "https://mcconduite.fr/code-de-la-route.html" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Comment se prépare le code chez MC Conduite ?", "acceptedAnswer": { "@type": "Answer", "text": "Vous combinez des séances en salle avec un formateur et un entraînement en ligne en accès illimité. Vous progressez à votre rythme sur toutes les thématiques de l'examen, jusqu'à être prêt(e)." } },
+      { "@type": "Question", "name": "Faut-il avoir le code avant de commencer la conduite ?", "acceptedAnswer": { "@type": "Answer", "text": "La réussite du code est nécessaire pour passer l'épreuve pratique. Vous pouvez toutefois débuter votre formation et préparer le code et la conduite en parallèle." } },
+      { "@type": "Question", "name": "Combien coûte la préparation au code ?", "acceptedAnswer": { "@type": "Answer", "text": "Nos tarifs sont communiqués sur demande, selon la formule choisie. Contactez-nous pour un devis personnalisé et sans engagement." } }
+    ]
+  }
+]
+	</script>
 </head>
 <body>
 
@@ -73,7 +96,6 @@
                     <div class="collapse navbar-collapse main-menu">
                          <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                                 <li class="nav-item submenu mc-mega-parent"><a class="nav-link" href="#">Formations</a>
                                     <ul class="mc-mega">
                                         <li class="mc-mega-col">
@@ -127,8 +149,8 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-3" data-cursor="-opaque">Code de la route</h1>
-                        <nav class="wow fadeInUp">
+                        <h1>Code de la route</h1>
+                        <nav>
                             <ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Accueil</a></li><li class="breadcrumb-item"><a href="permis-b.html">Permis B</a></li><li class="breadcrumb-item active" aria-current="page">Code de la route</li></ol>
                         </nav>
                     </div>
@@ -163,14 +185,6 @@
                                 <div class="sidebar-cta-header-content">
                                     <h3>Appelez-nous : <a href="tel:+33438214802">04 38 21 48 02</a></h3>
                                 </div>
-                            </div>
-                            <div class="sidebar-cta-body">
-                                <h3>Une question ?</h3>
-                                <p>Notre équipe vous renseigne et vous accompagne dans votre pré-inscription, sans engagement.</p>
-                            </div>
-                            <div class="sidebar-cta-footer">
-                                <div class="sidebar-cta-btn"><a href="contact.html" class="btn-default">Pré-inscription</a></div>
-                                <div class="sidebar-cta-image"><figure><img src="images/mc/logo-mc-conduite-white.png" alt="MC Conduite"></figure></div>
                             </div>
                         </div>
                     </div>

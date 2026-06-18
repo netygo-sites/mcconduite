@@ -32,6 +32,29 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<!-- Schema FAQ/Breadcrumb -->
+	<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mcconduite.fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Permis B", "item": "https://mcconduite.fr/permis-b.html" },
+      { "@type": "ListItem", "position": 3, "name": "Conduite supervisée", "item": "https://mcconduite.fr/conduite-supervisee.html" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Quelle différence avec la conduite accompagnée ?", "acceptedAnswer": { "@type": "Answer", "text": "La conduite supervisée est accessible dès 18 ans et n'impose pas de durée ni de kilométrage minimum. Contrairement à l'AAC, la période probatoire reste de 3 ans." } },
+      { "@type": "Question", "name": "Peut-on y passer après un échec à l'examen ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Avec l'accord écrit de l'assurance et une autorisation de conduire en supervisée, vous pouvez progresser avant de repasser l'épreuve pratique." } },
+      { "@type": "Question", "name": "Qui peut être accompagnateur ?", "acceptedAnswer": { "@type": "Answer", "text": "Toute personne titulaire du permis B depuis au moins 5 ans sans interruption, avec l'accord de son assureur et mentionnée au contrat." } }
+    ]
+  }
+]
+	</script>
 </head>
 <body>
 
@@ -73,7 +96,6 @@
                     <div class="collapse navbar-collapse main-menu">
                          <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                                 <li class="nav-item submenu mc-mega-parent"><a class="nav-link" href="#">Formations</a>
                                     <ul class="mc-mega">
                                         <li class="mc-mega-col">
@@ -127,8 +149,8 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-3" data-cursor="-opaque">Conduite supervisée</h1>
-                        <nav class="wow fadeInUp">
+                        <h1>Conduite supervisée</h1>
+                        <nav>
                             <ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Accueil</a></li><li class="breadcrumb-item"><a href="permis-b.html">Permis B</a></li><li class="breadcrumb-item active" aria-current="page">Conduite supervisée</li></ol>
                         </nav>
                     </div>
@@ -158,8 +180,6 @@
                         </div>
                         <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
                             <div class="sidebar-cta-header"><div class="icon-box"><img src="images/icon-headphone-accent.svg" alt=""></div><div class="sidebar-cta-header-content"><h3>Appelez-nous : <a href="tel:+33438214802">04 38 21 48 02</a></h3></div></div>
-                            <div class="sidebar-cta-body"><h3>Une question ?</h3><p>Notre équipe vous renseigne et vous accompagne dans votre pré-inscription, sans engagement.</p></div>
-                            <div class="sidebar-cta-footer"><div class="sidebar-cta-btn"><a href="contact.html" class="btn-default">Pré-inscription</a></div><div class="sidebar-cta-image"><figure><img src="images/mc/logo-mc-conduite-white.png" alt="MC Conduite"></figure></div></div>
                         </div>
                     </div>
                 </div>

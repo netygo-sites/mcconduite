@@ -558,7 +558,7 @@ header.main-header .header-sticky.active{
 
 .main-menu .nav-menu-wrapper{
 	flex: 1;
-	text-align: center;
+	text-align: right;
 	margin: 0 1.042vw;
 }
 
@@ -3932,7 +3932,7 @@ header.main-header .header-sticky.active{
 
 .page-single-sidebar{
 	position: sticky;
-	top: 30px;
+	top: 120px;
 	margin-right: 15px;
 }
 
@@ -12939,16 +12939,19 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
 /* Méga-menu Formations (desktop) — panneau large à 2 colonnes */
 @media (min-width: 992px){
     .mc-mega-parent > ul.mc-mega{
-        width: 580px;
+        width: 580px !important;
         max-width: 92vw;
         display: flex;
         gap: 12px;
-        padding: 18px !important;
+        padding: 12px !important;
+        left: 50%;
+        right: auto;
         margin-top: 12px;                 /* léger décalage sous la barre */
-        transform: translateY(-8px);      /* pas de scale -> aucun tremblement */
+        transform: translateX(-50%) translateY(-8px);  /* centré sous "Formations" */
     }
     .mc-mega-parent:hover > ul.mc-mega{
-        transform: translateY(0);
+        transform: translateX(-50%) translateY(0);
+        padding: 12px !important;         /* même padding ouvert/fermé -> pas de saut */
     }
     /* pont invisible : évite toute coupure du survol entre le menu et le panneau */
     .mc-mega-parent > ul.mc-mega::before{
@@ -12983,7 +12986,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
         padding: 6px 12px !important;   /* fige le padding -> pas de décalage au survol */
     }
     .mc-mega-parent .mc-mega ul li a:hover{
-        padding: 10px 12px !important;  /* idem pour les items */
+        padding: 8px 12px !important;  /* idem pour les items */
     }
     /* colonnes : listes statiques, pas de flyout */
     .mc-mega ul{
@@ -13000,7 +13003,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
         top: auto !important;
     }
     .mc-mega ul li{ margin: 2px 0; }
-    .mc-mega ul li a{ padding: 10px 12px !important; }
+    .mc-mega ul li a{ padding: 8px 12px !important; }
 }
 
 /* Widget flottant "Avis Google" (bas à droite) */
@@ -13119,6 +13122,15 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
 }
 .mc-price-card .btn-default{ align-self: flex-start; }
 .mc-price-note{ text-align: center; color: var(--text-color); font-size: 13px; margin-top: 30px; }
+
+/* Encart contact (sidebar formations) : numéro sur sa propre ligne, non coupé */
+.sidebar-cta-header-content h3 a{ display: block; white-space: nowrap; }
+
+/* Transitions de page douces — natif, sans JS, sans impact perf */
+@view-transition { navigation: auto; }                 /* fondu entre pages (navigateurs récents) */
+@keyframes mcPageIn { from { opacity: 0; } to { opacity: 1; } }
+body { animation: mcPageIn .3s ease-out both; }        /* léger fondu d'apparition du contenu */
+@media (prefers-reduced-motion: reduce){ body { animation: none; } }
 
 /* Désactivation du préchargeur (pas d'écran de chargement entre les pages) */
 .preloader{ display: none !important; }
