@@ -9322,6 +9322,9 @@ header.main-header .header-sticky.active{
 
 	.hero-stone{
 		margin-top: 0;
+		min-height: auto;
+		padding-top: 190px;
+		padding-bottom: 50px;
 	}
 
 	.hero-rating-header-stone h2{
@@ -13131,6 +13134,51 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
 @keyframes mcPageIn { from { opacity: 0; } to { opacity: 1; } }
 body { animation: mcPageIn .3s ease-out both; }        /* léger fondu d'apparition du contenu */
 @media (prefers-reduced-motion: reduce){ body { animation: none; } }
+
+/* Menu hamburger (mobile) — cohérent avec le menu desktop : panneau sombre, texte blanc, accents orange */
+@media (max-width: 991px){
+    .responsive-menu .slicknav_nav{
+        background: rgba(26, 26, 26, 0.98);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 8px;
+        margin: 8px 0 0;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+    }
+    .responsive-menu .slicknav_nav .slicknav_row,
+    .responsive-menu .slicknav_nav a{
+        color: var(--white-color) !important;
+        border-radius: 8px;
+        margin: 1px 0;
+        transition: background-color .2s ease, color .2s ease;
+    }
+    .responsive-menu .slicknav_nav .slicknav_row a.nav-link{ padding: 0 !important; color: var(--white-color) !important; }
+    .responsive-menu .slicknav_nav li{ border-bottom: 1px solid rgba(255, 255, 255, 0.07); }
+    .responsive-menu .slicknav_nav li:last-child{ border-bottom: 0; }
+    .responsive-menu .slicknav_nav .slicknav_row:hover,
+    .responsive-menu .slicknav_nav a:hover{
+        background: rgba(255, 255, 255, 0.06) !important;
+        color: var(--accent-color) !important;
+    }
+    .responsive-menu .slicknav_nav .slicknav_row:hover a.nav-link{ color: var(--accent-color) !important; }
+    .responsive-menu .slicknav_arrow{ color: var(--accent-color); float: right; }
+    /* Titres de colonne (Permis B / Permis Moto) en intitulés de section */
+    .responsive-menu .mc-mega-title{ display: inline; }
+    .responsive-menu .mc-mega-title a{
+        color: var(--accent-color) !important;
+        text-transform: uppercase;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        letter-spacing: .04em;
+    }
+    /* Indentation des sous-niveaux */
+    .responsive-menu .slicknav_nav ul{ margin: 0; }
+    .responsive-menu .slicknav_nav ul .slicknav_row,
+    .responsive-menu .slicknav_nav ul a{ padding-left: 28px !important; font-size: 15px; }
+    .responsive-menu .slicknav_nav ul ul a{ padding-left: 40px !important; }
+}
 
 /* Désactivation du préchargeur (pas d'écran de chargement entre les pages) */
 .preloader{ display: none !important; }
