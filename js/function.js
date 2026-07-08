@@ -386,24 +386,37 @@
 	});
 
 	function submitForm(){
-		/* Ajax call to submit form */
+		/* Ajax call to submit form (Web3Forms) */
+		var formData = {};
+		$.each($contactform.serializeArray(), function(_, field){ formData[field.name] = field.value; });
+		var $btn = $contactform.find('button[type="submit"]');
+		var btnText = $btn.text();
+		$btn.prop('disabled', true).text('Envoi en cours…');
 		$.ajax({
 			type: "POST",
-			url: "form-process.php",
-			data: $contactform.serialize(),
-			success : function(text){
-				if (text === "success"){
+			url: $contactform.attr("action"),
+			data: JSON.stringify(formData),
+			contentType: "application/json",
+			dataType: "json",
+			success : function(res){
+				if (res && res.success){
 					formSuccess();
 				} else {
-					submitMSG(false,text);
+					submitMSG(false, (res && res.message) ? res.message : "Une erreur est survenue. Merci de réessayer ou de nous appeler au 04 38 21 48 02.");
 				}
+			},
+			error : function(){
+				submitMSG(false, "Envoi impossible pour le moment. Merci de nous appeler au 04 38 21 48 02.");
+			},
+			complete : function(){
+				$btn.prop('disabled', false).text(btnText);
 			}
 		});
 	}
 
 	function formSuccess(){
 		$contactform[0].reset();
-		submitMSG(true, "Message Sent Successfully!")
+		submitMSG(true, "Merci ! Votre pré-inscription a bien été envoyée. Nous vous recontactons très vite.");
 	}
 
 	function submitMSG(valid, msg){
