@@ -80,7 +80,7 @@
 					</div>
 					<div class="mc-topbar-right mc-topbar-left">
 						<a class="mc-topbar-item" href="tel:+33438214802"><i class="fa-solid fa-phone"></i> 04 38 21 48 02</a>
-						<span class="mc-topbar-badge"><i class="fa-solid fa-award"></i> Auto-école labellisée qualité</span>
+						<!-- Label masque en attendant attribution officielle (a reactiver) : <span class="mc-topbar-badge"><i class="fa-solid fa-award"></i> Auto-école labellisée qualité</span> -->
 					</div>
 				</div>
 			</div>
@@ -201,7 +201,13 @@
 
                             <!-- Contact Form Start -->
                             <div class="contact-form">
-                                <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.4s">
+                                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.4s">
+                                    <!-- Web3Forms : remplacer la valeur ci-dessous par la cle d'acces recue par email -->
+                                    <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS">
+                                    <input type="hidden" name="subject" value="Nouvelle pré-inscription — Site MC Conduite">
+                                    <input type="hidden" name="from_name" value="Site MC Conduite">
+                                    <!-- Honeypot anti-spam (laisser vide) -->
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true">
                                     <div class="row">
                                         <div class="form-group col-md-12 mb-4">
                                             <label>Civilité :</label>
