@@ -43,6 +43,45 @@
   }
 ]
 	</script>
+	<!-- Schema : catalogue des tarifs (OfferCatalog) -->
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DrivingSchool",
+  "name": "MC Conduite",
+  "url": "https://mcconduite.fr/",
+  "telephone": "+33438214802",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "26 avenue du 8 mai 1945",
+    "postalCode": "38130",
+    "addressLocality": "Échirolles",
+    "addressCountry": "FR"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tarifs des formations",
+    "itemListElement": [
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "95", "itemOffered": { "@type": "Service", "name": "Forfait Code de la route (voiture)" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "30", "itemOffered": { "@type": "Service", "name": "Code de la route en ligne (voiture)" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "1255", "itemOffered": { "@type": "Service", "name": "Permis B — boîte manuelle, 20 leçons" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "912", "itemOffered": { "@type": "Service", "name": "Permis B — boîte manuelle, 13 leçons" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "1655", "itemOffered": { "@type": "Service", "name": "Permis B accéléré — boîte manuelle, stage 15 jours" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "1312", "itemOffered": { "@type": "Service", "name": "Permis B accéléré — boîte automatique, stage 7 jours" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "1585", "itemOffered": { "@type": "Service", "name": "Conduite accompagnée (AAC) — boîte manuelle" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "1260", "itemOffered": { "@type": "Service", "name": "Conduite accompagnée (AAC) — boîte automatique" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "1365", "itemOffered": { "@type": "Service", "name": "Conduite supervisée — boîte manuelle" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "1028", "itemOffered": { "@type": "Service", "name": "Conduite supervisée — boîte automatique" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "415", "itemOffered": { "@type": "Service", "name": "Passerelle boîte automatique vers boîte manuelle" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "49", "itemOffered": { "@type": "Service", "name": "Code moto" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "930", "itemOffered": { "@type": "Service", "name": "Permis moto A2" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "270", "itemOffered": { "@type": "Service", "name": "Passerelle 125 cm³ (permis A1)" } },
+      { "@type": "Offer", "priceCurrency": "EUR", "price": "330", "itemOffered": { "@type": "Service", "name": "Passerelle A (A2 vers A)" } }
+    ]
+  }
+}
+	</script>
 	<!-- SEO : canonical + Open Graph -->
 	<link rel="canonical" href="https://mcconduite.fr/tarifs.html">
 	<meta property="og:type" content="website">
