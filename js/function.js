@@ -355,7 +355,7 @@
 	}
 
 	/* Zoom Gallery screenshot */
-	$('.gallery-items').magnificPopup({
+	if ($('.gallery-items').length && $.fn.magnificPopup) $('.gallery-items').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		closeOnContentClick: false,
@@ -473,7 +473,7 @@
 	new WOW().init();
 
 	/* Popup Video */
-	if ($('.popup-video').length) {
+	if ($('.popup-video').length && $.fn.magnificPopup) {
 		$('.popup-video').magnificPopup({
 			type: 'iframe',
 			mainClass: 'mfp-fade',

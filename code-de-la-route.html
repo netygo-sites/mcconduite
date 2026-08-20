@@ -25,14 +25,11 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<!-- SlickNav Css -->
 	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<!-- Font Awesome Icon Css-->
 	<link href="css/all.min.css" rel="stylesheet" media="screen">
 	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
-    <!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/animate.css" media="print" onload="this.media='all';this.onload=null">
+	<noscript><link rel="stylesheet" href="css/animate.css"></noscript>
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 	<!-- Schema FAQ/Breadcrumb -->
@@ -205,7 +202,7 @@
                 <div class="col-lg-8">
                     <div class="course-single-content">
                         <div class="page-single-image">
-                            <figure class="image-anime reveal"><img loading="lazy" decoding="async" src="images/mc/photo-code.jpg" alt="Préparation au code de la route à Échirolles"></figure>
+                            <figure class="image-anime reveal"><picture><source srcset="images/mc/photo-code.webp" type="image/webp"><img loading="lazy" decoding="async" src="images/mc/photo-code.jpg" alt="Préparation au code de la route à Échirolles"></picture></figure>
                         </div>
 
                         <div class="course-entry">
@@ -232,8 +229,8 @@
                                     </div>
                                 </div>
                                 <div class="course-info-images">
-                                    <div class="course-info-image"><figure class="image-anime reveal"><img loading="lazy" decoding="async" src="images/mc/interieur-1.jpg" alt="Salle de formation MC Conduite"></figure></div>
-                                    <div class="course-info-image"><figure class="image-anime reveal"><img loading="lazy" decoding="async" src="images/mc/interieur-2.jpg" alt="Accueil de l'auto-école MC Conduite"></figure></div>
+                                    <div class="course-info-image"><figure class="image-anime reveal"><picture><source srcset="images/mc/interieur-1.webp" type="image/webp"><img loading="lazy" decoding="async" src="images/mc/interieur-1.jpg" alt="Salle de formation MC Conduite"></picture></figure></div>
+                                    <div class="course-info-image"><figure class="image-anime reveal"><picture><source srcset="images/mc/interieur-2.webp" type="image/webp"><img loading="lazy" decoding="async" src="images/mc/interieur-2.jpg" alt="Accueil de l'auto-école MC Conduite"></picture></figure></div>
                                 </div>
                                 <p class="wow fadeInUp" data-wow-delay="0.2s">Vous abordez ainsi l'examen en confiance, avec toutes les clés pour réussir du premier coup et, surtout, pour devenir un conducteur prudent et responsable.</p>
                             </div>
@@ -254,7 +251,7 @@
                                                 <ul><li>Accessible dès le début de votre formation</li></ul>
                                             </div>
                                         </div>
-                                        <div class="course-type-image"><figure class="image-anime reveal"><img loading="lazy" decoding="async" src="images/mc/photo-permis-b.jpg" alt="Élève en formation au code"></figure></div>
+                                        <div class="course-type-image"><figure class="image-anime reveal"><picture><source srcset="images/mc/photo-permis-b.webp" type="image/webp"><img loading="lazy" decoding="async" src="images/mc/photo-permis-b.jpg" alt="Élève en formation au code"></picture></figure></div>
                                     </div>
                                     <div class="course-type-item">
                                         <div class="course-type-content-box wow fadeInUp" data-wow-delay="0.2s">
@@ -268,7 +265,7 @@
                                                 <ul><li>Préparation à l'ETG (code voiture)</li></ul>
                                             </div>
                                         </div>
-                                        <div class="course-type-image"><figure class="image-anime reveal"><img loading="lazy" decoding="async" src="images/mc/photo-faq.jpg" alt="Candidat au permis"></figure></div>
+                                        <div class="course-type-image"><figure class="image-anime reveal"><picture><source srcset="images/mc/photo-faq.webp" type="image/webp"><img loading="lazy" decoding="async" src="images/mc/photo-faq.jpg" alt="Candidat au permis"></picture></figure></div>
                                     </div>
                                 </div>
                             </div>
@@ -429,12 +426,10 @@
     <!-- SlickNav js file -->
     <script defer src="js/jquery.slicknav.js"></script>
     <!-- Swiper js file -->
-    <script defer src="js/swiper-bundle.min.js"></script>
     <!-- Counter js file -->
     <script defer src="js/jquery.waypoints.min.js"></script>
     <script defer src="js/jquery.counterup.min.js"></script>
     <!-- Magnific js file -->
-    <script defer src="js/jquery.magnific-popup.min.js"></script>
     <!-- SmoothScroll -->
     <!-- Parallax js -->
     <script defer src="js/parallaxie.js"></script>
