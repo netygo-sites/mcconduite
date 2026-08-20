@@ -34,6 +34,9 @@
 		prependTo : '.responsive-menu'
 	});
 
+	/* Accessibilite : le bouton genere par slicknav n'a aucun nom (label vide) */
+	$('.slicknav_btn').attr({'aria-label':'Ouvrir le menu','title':'Menu'});
+
 	if($("a[href='#top']").length){
 		$(document).on("click", "a[href='#top']", function() {
 			$("html, body").stop(true).animate({ scrollTop: 0 }, 350);

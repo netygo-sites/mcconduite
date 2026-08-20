@@ -4,14 +4,14 @@
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="MC Conduite, auto-moto-école à Échirolles (Grenoble). Permis B boîte manuelle et automatique, conduite accompagnée, code de la route et permis moto. Pré-inscription en ligne.">
 	<meta name="keywords" content="auto-école Échirolles, permis B Échirolles, permis moto Grenoble, conduite accompagnée, code de la route, MC Conduite">
 	<meta name="author" content="MC Conduite">
 	<!-- Page Title -->
     <title>MC Conduite — Auto-moto-école à Échirolles | Permis B & Moto</title>
 	<!-- Favicon Icon -->
-	<link rel="preload" as="image" href="images/mc/devanture.jpg" fetchpriority="high">
+	<link rel="preload" as="image" href="images/mc/hero-poster.webp" type="image/webp" fetchpriority="high">
 	<link rel="icon" href="/favicon.ico" sizes="any">
 	<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
@@ -21,18 +21,13 @@
 	<!-- Google Fonts Css-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all';this.onload=null">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
+	<!-- Feuille de styles fusionnee : bootstrap + slicknav + fontawesome + custom -->
+	<link href="css/site.css" rel="stylesheet" media="screen">
 	<!-- Animated Css -->
 	<link rel="stylesheet" href="css/animate.css" media="print" onload="this.media='all';this.onload=null">
 	<noscript><link rel="stylesheet" href="css/animate.css"></noscript>
-	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
 	<!-- Schema.org DrivingSchool -->
 	<script type="application/ld+json">
 	{
@@ -184,12 +179,13 @@
 			<div class="responsive-menu"></div>
 		</div>
 	</header>
+	<main id="contenu">
 	<!-- Header End -->
 
     <!-- Hero Section Start -->
     <div class="hero-stone bg-section dark-section parallaxie">
         <!-- Hero Background Video Start -->
-        <video class="mc-hero-video" muted loop playsinline preload="none" poster="images/mc/devanture.jpg" aria-hidden="true" data-src-mp4="images/mc/hero-bg.mp4" data-src-mov="images/mc/hero-bg.mov"></video>
+        <video class="mc-hero-video" muted loop playsinline preload="none" poster="images/mc/hero-poster.webp" aria-hidden="true" data-src-mp4="images/mc/hero-bg.mp4" data-src-mov="images/mc/hero-bg.mov"></video>
         <!-- Hero Background Video End -->
         <div class="container">
             <div class="row">
@@ -1042,6 +1038,8 @@
     <!-- Back To Top Start -->
     <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
     <!-- Back To Top End -->
+
+    </main>
 
     <!-- Main Footer Start -->
     <footer class="main-footer bg-section dark-section">
