@@ -14,8 +14,14 @@ const fs = require('fs');
 const path = require('path');
 
 // Ordre de cascade — NE PAS MODIFIER (reproduit l'ordre historique du <head>)
+//
+// bootstrap.purged.css = bootstrap.min.css débarrassé des règles inutilisées
+// (227 Ko -> 99 Ko). Généré avec PurgeCSS, avec une liste blanche pour les
+// classes ajoutées par JavaScript (slicknav, collapse/show/active, is-visible…).
+// bootstrap.min.css est conservé comme source de référence.
+// À régénérer si de nouvelles classes Bootstrap sont utilisées dans le HTML.
 const order = [
-  'css/bootstrap.min.css',
+  'css/bootstrap.purged.css',
   'css/slicknav.min.css',
   'css/all.min.css',
   'css/custom.css',
