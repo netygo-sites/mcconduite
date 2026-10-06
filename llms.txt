@@ -19,7 +19,7 @@
 
 ### Permis B (voiture)
 - Boîte manuelle, 20 leçons : 1255 €
-- Boîte manuelle, 13 leçons : 912 €
+- Boîte automatique, 13 leçons : 912 €
 - Boîte manuelle accéléré, stage 15 jours : 1655 €
 - Boîte automatique accéléré, stage 7 jours : 1312 €
 - Conduite accompagnée (AAC, dès 15 ans) — boîte manuelle : 1585 € · boîte automatique : 1260 €
@@ -27,9 +27,10 @@
 - Passerelle boîte automatique vers boîte manuelle : 415 €
 
 ### Permis moto
-- Permis A2 : 930 €
-- Passerelle 125 cm³ (permis A1) : 270 €
-- Passerelle A (A2 vers A) : 330 €
+- Permis AM (BSR), 8 h de formation : 270 €
+- Permis A2 (tout compris, code moto offert avec le forfait) : 890 €
+- Formation 125 cm³ (7 h, après 2 ans de permis B) : 270 €
+- Passerelle A (A2 vers A) : 345 €
 
 ## Pages du site
 - [Accueil](https://mcconduite.fr/) : présentation, méthode pédagogique, avis.
