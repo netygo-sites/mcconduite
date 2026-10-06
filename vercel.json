@@ -1,7 +1,5 @@
 {
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/label-qualite.html", "destination": "/", "permanent": false },
-    { "source": "/post-permis.html", "destination": "/", "permanent": false }
+    { "source": "/index.html", "destination": "/", "permanent": true }
   ]
 }
