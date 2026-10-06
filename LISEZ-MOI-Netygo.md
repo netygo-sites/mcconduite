@@ -49,7 +49,7 @@ En ajoutant une page : l'ajouter aussi dans `public/sitemap.xml` et, si utile, `
 10. **Règlement intérieur** : version synthétisée en ligne ; possibilité d'ajouter le PDF officiel en téléchargement.
 
 ## Formulaire de pré-inscription
-Envoyé au **service de formulaires NETYGO** (`netygo-forms`, entrée `mc-conduite`) : aucun code serveur dans le site.
+Envoyé au **service de formulaires NETYGO** (`netygo-forms`, entrée `mcconduite-fr`) : aucun code serveur dans le site.
 Adresse d'envoi et clé publique Turnstile dans `src/data/site.ts`, envoi dans `public/js/function.js` (champ piège, horodatage, vérification anti-robot invisible). Destinataires, accusé de réception et libellés du mail se règlent dans le service, pas ici.
 
 ## Données société (vérifiées dans le doc client)

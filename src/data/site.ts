@@ -6,6 +6,6 @@
  * du site (la clé secrète reste dans le service).
  */
 export const formulaire = {
-  endpoint: 'https://netygo-forms.netygo.workers.dev/v1/mc-conduite',
+  endpoint: 'https://netygo-forms.netygo.workers.dev/v1/mcconduite-fr',
   sitekey: '0x4AAAAAAE_PqEa_tOy_PoOU',
 };
