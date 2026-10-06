@@ -1,0 +1,193 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Permis B",
+					"item": "https://mcconduite.fr/permis-b"
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Permis B à Échirolles — boîte manuelle, automatique, AAC | MC Conduite"}
+	description={"Permis B à Échirolles avec MC Conduite : boîte manuelle ou automatique, code de la route, conduite accompagnée (AAC), conduite supervisée et post-permis. Tarifs sur demande."}
+	keywords={"permis B Échirolles, boîte automatique, conduite accompagnée AAC, code de la route, post-permis, MC Conduite"}
+	path={"/permis-b"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Permis B à Échirolles — voiture</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Permis B</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+    <!-- Page Courses Start -->
+    <div class="page-courses">
+        <div class="container">
+            <!-- Intro Start -->
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Permis B — voiture</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Passez votre permis voiture à Échirolles</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Chez MC Conduite, le permis B se prépare à votre rythme, en boîte manuelle ou automatique, avec un suivi personnalisé du code jusqu'à l'examen. Conduite accompagnée, conduite supervisée, post-permis : nous adaptons la formule à votre situation et à votre objectif.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Intro End -->
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/code-de-la-route">Code de la route</a></h2>
+                                <p>Préparation au code en salle et en ligne, en accès illimité jusqu'à la réussite.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/code-de-la-route" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/mc/photo-code.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-code.jpg" alt="Code de la route"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-1.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/boite-manuelle">Boîte manuelle</a></h2>
+                                <p>La formation classique pour conduire tous les véhicules à boîte manuelle.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/boite-manuelle" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/mc/photo-permis-b.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-permis-b.jpg" alt="Permis B boîte manuelle"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-2.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/boite-automatique">Boîte automatique</a></h2>
+                                <p>Le permis B78 : une formation souvent plus rapide et plus sereine.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/boite-automatique" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/mc/photo-auto.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-auto.jpg" alt="Permis B boîte automatique"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-3.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a></h2>
+                                <p>Dès 15 ans : plus d'expérience, plus de sérénité, un meilleur taux de réussite.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/conduite-accompagnee" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/mc/photo-aac.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-aac.jpg" alt="Conduite accompagnée AAC"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-4.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/conduite-supervisee">Conduite supervisée</a></h2>
+                                <p>Dès 18 ans : gagnez de l'expérience avant l'examen ou après un échec.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/conduite-supervisee" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/mc/photo-exam.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-exam.jpg" alt="Conduite supervisée"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-1.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/post-permis">Post-permis</a></h2>
+                                <p>Réduisez votre période probatoire grâce à un stage de 7 h, possible avec notre label.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/post-permis" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><img loading="lazy" decoding="async" src="/images/mc/photo-road.jpg" alt="Stage post-permis"></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-2.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarif + CTA Start -->
+            <div class="row" style="margin-top:40px;">
+                <div class="col-lg-12">
+                    <div class="section-footer-text section-satisfy-img wow fadeInUp" style="text-align:center;">
+                        <p><strong>Tarifs sur demande.</strong> Chaque formation est adaptée à votre niveau : contactez-nous pour un devis personnalisé et sans engagement. <a href="/contact">Faire ma pré-inscription</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarif + CTA End -->
+        </div>
+    </div>
+    <!-- Page Courses End -->
+
+        <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

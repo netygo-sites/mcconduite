@@ -1,0 +1,493 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Tarifs",
+					"item": "https://mcconduite.fr/tarifs"
+				}
+			]
+		}
+	],
+	{
+		"@context": "https://schema.org",
+		"@type": "DrivingSchool",
+		"name": "MC Conduite",
+		"url": "https://mcconduite.fr/",
+		"telephone": "+33438214802",
+		"priceRange": "€€",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "26 avenue du 8 mai 1945",
+			"postalCode": "38130",
+			"addressLocality": "Échirolles",
+			"addressCountry": "FR"
+		},
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Tarifs des formations",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "95",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Forfait Code de la route (voiture)"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "30",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Code de la route en ligne (voiture)"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "1255",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Permis B — boîte manuelle, 20 leçons"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "912",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Permis B — boîte automatique, 13 leçons"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "1655",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Permis B accéléré — boîte manuelle, stage 15 jours"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "1312",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Permis B accéléré — boîte automatique, stage 7 jours"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "1585",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Conduite accompagnée (AAC) — boîte manuelle"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "1260",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Conduite accompagnée (AAC) — boîte automatique"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "1365",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Conduite supervisée — boîte manuelle"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "1028",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Conduite supervisée — boîte automatique"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "415",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Passerelle boîte automatique vers boîte manuelle"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "49",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Code moto"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "890",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Permis moto A2"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "270",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Permis AM (BSR)"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "270",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Formation 125 cm³"
+					}
+				},
+				{
+					"@type": "Offer",
+					"priceCurrency": "EUR",
+					"price": "345",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Passerelle A (A2 vers A)"
+					}
+				}
+			]
+		}
+	}
+];
+---
+<Base
+	title={"Tarifs — MC Conduite, auto-moto-école à Échirolles"}
+	description={"Tarifs de MC Conduite à Échirolles : forfaits code, permis B (traditionnel, accéléré, conduite accompagnée et supervisée) et permis moto (AM, A2, 125 cm³, passerelle A). Pré-inscription en ligne."}
+	keywords={"tarifs auto-école Échirolles, prix permis B, prix permis moto, forfait code, MC Conduite"}
+	path={"/tarifs"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Nos tarifs</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Tarifs</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+<!-- Tarifs Code -->
+    <div class="mc-section">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <h3 class="wow fadeInUp">Code de la route</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">Forfaits code voiture</h2>
+            </div>
+            <div class="row mc-price-grid">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Forfait Code Voiture</h3><div class="mc-price">95<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Accès en salle illimité</li>
+                            <li>Accès en ligne illimité</li>
+                            <li>Frais d'inscription</li>
+                            <li>Demande NEPH</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Code en ligne voiture</h3><div class="mc-price">30<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Accès en ligne illimité</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarifs Permis B -->
+    <div class="mc-section mc-section-alt">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <h3 class="wow fadeInUp">Permis B — voiture</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">Nos forfaits permis B</h2>
+            </div>
+
+            <h4 class="mc-price-subtitle">Permis B traditionnel</h4>
+            <div class="row mc-price-grid">
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Boîte manuelle — 20 leçons</h3><div class="mc-price">1255<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Gestion de l'élève</li>
+                            <li>Kit pédagogique</li>
+                            <li>Évaluation de départ</li>
+                            <li>20 leçons de conduite</li>
+                            <li>1 accompagnement à l'examen</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Boîte automatique — 13 leçons</h3><div class="mc-price">912<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Gestion de l'élève</li>
+                            <li>Kit pédagogique</li>
+                            <li>Évaluation de départ</li>
+                            <li>13 leçons de conduite</li>
+                            <li>1 accompagnement à l'examen</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mc-price-subtitle">Permis B accéléré</h4>
+            <div class="row mc-price-grid">
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Boîte manuelle — stage 15 jours</h3><div class="mc-price">1655<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Stage intensif 15 jours</li>
+                            <li>Gestion de l'élève</li>
+                            <li>Kit pédagogique</li>
+                            <li>Évaluation de départ</li>
+                            <li>20 leçons de conduite</li>
+                            <li>1 accompagnement à l'examen</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Boîte automatique — stage 7 jours</h3><div class="mc-price">1312<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Stage intensif 7 jours</li>
+                            <li>Gestion de l'élève</li>
+                            <li>Kit pédagogique</li>
+                            <li>Évaluation de départ</li>
+                            <li>13 leçons de conduite</li>
+                            <li>1 accompagnement à l'examen</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mc-price-subtitle">Conduite accompagnée (AAC) — dès 15 ans</h4>
+            <div class="row mc-price-grid">
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Boîte manuelle</h3><div class="mc-price">1585<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Gestion de l'élève</li>
+                            <li>Kit pédagogique</li>
+                            <li>Évaluation de départ</li>
+                            <li>20 leçons de conduite</li>
+                            <li>1 rendez-vous préalable</li>
+                            <li>2 rendez-vous pédagogiques</li>
+                            <li>1 accompagnement à l'examen</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Boîte automatique</h3><div class="mc-price">1260<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Gestion de l'élève</li>
+                            <li>Kit pédagogique</li>
+                            <li>Évaluation de départ</li>
+                            <li>13 leçons de conduite</li>
+                            <li>1 rendez-vous préalable</li>
+                            <li>2 rendez-vous pédagogiques</li>
+                            <li>1 accompagnement à l'examen</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mc-price-subtitle">Conduite supervisée — dès 18 ans</h4>
+            <div class="row mc-price-grid">
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Boîte manuelle</h3><div class="mc-price">1365<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Gestion de l'élève</li>
+                            <li>Kit pédagogique</li>
+                            <li>Évaluation de départ</li>
+                            <li>20 leçons de conduite</li>
+                            <li>1 rendez-vous préalable</li>
+                            <li>1 accompagnement à l'examen</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Boîte automatique</h3><div class="mc-price">1028<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Gestion de l'élève</li>
+                            <li>Kit pédagogique</li>
+                            <li>Évaluation de départ</li>
+                            <li>13 leçons de conduite</li>
+                            <li>1 rendez-vous préalable</li>
+                            <li>1 accompagnement à l'examen</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mc-price-subtitle">Passerelle boîte automatique → boîte manuelle</h4>
+            <div class="row mc-price-grid">
+                <div class="col-lg-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Passerelle boîte manuelle</h3><div class="mc-price">415<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>7 h de formation pratique</li>
+                            <li>Demande de fabrication de permis</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarifs Moto -->
+    <div class="mc-section">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <h3 class="wow fadeInUp">Permis Moto</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">Nos forfaits moto</h2>
+            </div>
+            <div class="row mc-price-grid justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Code moto</h3><div class="mc-price">49<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Accès en ligne illimité</li>
+                            <li>Demande NEPH</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Permis AM (BSR)</h3><div class="mc-price">270<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Frais de gestion administratifs</li>
+                            <li>Kit pédagogique</li>
+                            <li>8 h de formation</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Permis A2</h3><div class="mc-price">890<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>Frais de gestion administratifs</li>
+                            <li>Kit pédagogique</li>
+                            <li>8 leçons de plateau</li>
+                            <li>12 leçons de circulation</li>
+                            <li>1 accompagnement examen plateau</li>
+                            <li>1 accompagnement examen circulation</li>
+                            <li>Code moto offert avec le forfait</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Formation 125 cm³</h3><div class="mc-price">270<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>2 ans de permis B minimum</li>
+                            <li>7 h de formation</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-price-card">
+                        <div class="mc-price-head"><h3>Passerelle A</h3><div class="mc-price">345<span>€</span></div></div>
+                        <ul class="mc-price-list">
+                            <li>2 ans de permis A2</li>
+                            <li>7 h de formation</li>
+                            <li>Demande de fabrication de permis</li>
+                        </ul>
+                        <a href="/contact" class="btn-default btn-highlighted">Pré-inscription</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="mc-price-note">Tarifs indicatifs susceptibles d'évoluer. Frais d'examen et prestations complémentaires sur devis. Contactez-nous pour un accompagnement personnalisé.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

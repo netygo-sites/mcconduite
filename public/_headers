@@ -1,0 +1,3 @@
+# Préproduction : l'adresse pages.dev ne doit pas être indexée (le site public est mcconduite.fr)
+https://mcconduite.pages.dev/*
+  X-Robots-Tag: noindex

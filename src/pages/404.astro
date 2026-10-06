@@ -1,0 +1,89 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Erreur 404",
+					"item": "https://mcconduite.fr/404"
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Page introuvable — MC Conduite"}
+	path={"/404"}
+	noindex
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Page introuvable</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Erreur 404</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+    <!-- error Page start -->
+    <div class="error-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="error-page-image wow fadeInUp">
+                        <img loading="lazy" decoding="async" src="/images/404-error-img.png" alt="">
+                    </div>
+                    <div class="error-page-content">
+                        <div class="section-title">
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Oups ! Page introuvable</h2>
+                        </div>
+                        <div class="error-page-content-body">
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">La page que vous recherchez n'existe pas ou a été déplacée.</p>
+                            <a class="btn-default wow fadeInUp" data-wow-delay="0.4s" href="/">Retour à l'accueil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- error Page end -->
+
+        <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

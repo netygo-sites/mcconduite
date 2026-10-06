@@ -1,0 +1,283 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Label qualité",
+					"item": "https://mcconduite.fr/label-qualite"
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Label qualité — MC Conduite, auto-école labellisée à Échirolles"}
+	description={"MC Conduite est une auto-école labellisée à Échirolles : suivi pédagogique personnalisé, transparence des tarifs, procédés d'évaluation clairs, accès aux financements et au stage post-permis."}
+	keywords={"auto-école labellisée Échirolles, label qualité auto-école, post-permis, financement permis CPF, MC Conduite"}
+	path={"/label-qualite"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Label qualité</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Label qualité</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+    <!-- Label Intro Section Start -->
+    <div class="mc-section">
+        <div class="container">
+            <div class="row align-items-center mc-row-gap">
+                <div class="col-lg-6">
+                    <div class="mc-media wow fadeInUp">
+                        <figure><picture><source srcset="/images/mc/logo-mural.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/logo-mural.jpg" alt="MC Conduite, auto-école labellisée à Échirolles"></picture></figure>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-title mc-mb-0">
+                        <h3 class="wow fadeInUp">Label qualité</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">MC Conduite, une auto-école labellisée</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">La labellisation qualité est un gage de sérieux et de transparence. Elle garantit à nos élèves une formation structurée, un accompagnement personnalisé et une information claire sur les tarifs et les délais. C'est aussi ce qui nous permet de vous proposer des prestations comme le stage post-permis.</p>
+                    </div>
+                    <div class="mc-btn-row wow fadeInUp" data-wow-delay="0.4s">
+                        <a href="/contact" class="btn-default">Pré-inscription</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Label Intro Section End -->
+
+    <!-- Engagements Section Start -->
+    <div class="mc-section mc-section-alt">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <h3 class="wow fadeInUp">Nos engagements</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">Ce que la qualité garantit pour vous</h2>
+            </div>
+            <div class="row mc-cards-row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-card wow fadeInUp">
+                        <div class="mc-card-icon"><img loading="lazy" decoding="async" src="/images/icon-about-us-1.svg" alt=""></div>
+                        <h3>Un suivi pédagogique personnalisé</h3>
+                        <p>Évaluation de départ, suivi régulier et bilan : vous savez toujours où vous en êtes dans votre progression.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="mc-card-icon"><img loading="lazy" decoding="async" src="/images/icon-about-us-2.svg" alt=""></div>
+                        <h3>Transparence des tarifs et des délais</h3>
+                        <p>Des prix et des délais annoncés clairement, sans mauvaise surprise, pour une formation en toute confiance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="mc-card-icon"><img loading="lazy" decoding="async" src="/images/icon-about-us-1.svg" alt=""></div>
+                        <h3>Des moniteurs engagés</h3>
+                        <p>Une équipe formée, à l'écoute et bienveillante, qui place votre réussite et votre sécurité au premier plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Engagements Section End -->
+
+    <!-- Avantages Section Start -->
+    <div class="mc-section">
+        <div class="container">
+            <div class="row align-items-center mc-row-gap">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="mc-media wow fadeInUp">
+                        <figure><picture><source srcset="/images/mc/photo-avantages.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-avantages.jpg" alt="Élève souriante au volant lors de sa formation chez MC Conduite"></picture></figure>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="section-title mc-mb-0">
+                        <h3 class="wow fadeInUp">Vos avantages</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Des bénéfices concrets pour votre formation</h2>
+                    </div>
+                    <ul class="mc-formation-list">
+                        <li>Accès facilité à certains financements (CPF, aides régionales, permis à 1 €/jour si éligible)</li>
+                        <li>Possibilité de suivre le stage post-permis pour réduire la période probatoire</li>
+                        <li>Procédés d'évaluation clairs : évaluation de départ, suivi en cours de formation, bilan</li>
+                        <li>Un interlocuteur dédié pour vous accompagner dans vos démarches</li>
+                    </ul>
+                    <div class="mc-btn-row wow fadeInUp">
+                        <a href="/reglement-interieur" class="btn-default">Consulter le règlement intérieur</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Avantages Section End -->
+
+    <!-- Procédés d'évaluation Section Start -->
+    <div class="mc-section mc-section-alt">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <h3 class="wow fadeInUp">Procédés d'évaluation</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">Un cadre clair, de l'inscription au bilan</h2>
+            </div>
+            <div class="row mc-cards-row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-step wow fadeInUp">
+                        <span class="mc-step-no">01</span>
+                        <h3>Évaluation de départ</h3>
+                        <p>Un point de départ objectif pour estimer votre volume de formation et construire votre parcours.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-step wow fadeInUp" data-wow-delay="0.2s">
+                        <span class="mc-step-no">02</span>
+                        <h3>Suivi en cours de formation</h3>
+                        <p>Des points réguliers avec votre moniteur pour mesurer vos progrès et ajuster le travail.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mc-step wow fadeInUp" data-wow-delay="0.4s">
+                        <span class="mc-step-no">03</span>
+                        <h3>Bilan</h3>
+                        <p>Une synthèse avant l'examen pour vous présenter prêt(e), en confiance et en sécurité.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Procédés d'évaluation Section End -->
+
+    <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Documents qualité Start -->
+    <div class="mc-section mc-section-alt">
+        <div class="container">
+            <div class="section-title section-title-center">
+                <h2 class="text-anime-style-3" data-cursor="-opaque">Nos documents</h2>
+            </div>
+            <div class="row mc-docs-grid">
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/1.2%20LES%20ENJEUX%20DE%20LA%20FORMATION.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Les enjeux de la formation</strong><small>PDF · 362 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/1.3%20REGLEMENT%20INTERIEUR.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Règlement intérieur</strong><small>PDF · 183 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/1.4%20Le%20lieu%20et%20conditions%20d'usage%20de%20la%20piste.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Le lieu et conditions d'usage de la piste</strong><small>PDF · 81 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/1.6%20-%20POST%20PERMIS%20TEXTE.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Le stage post-permis</strong><small>PDF · 207 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/1.7%20LA%20CONDUITE%20AAC.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>La conduite accompagnée (AAC)</strong><small>PDF · 163 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/1.7%20LA%20CONDUITE%20SUPERVISEE.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>La conduite supervisée</strong><small>PDF · 143 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/2.2%20MODALITES%20DE%20PRISE%20EN%20COMPTE%20DU%20HANDICAP.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Modalités de prise en compte du handicap</strong><small>PDF · 84 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/2.2%20PROCEDE%20D'EVALUATION%20EN%20VOITURE.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Procédé d'évaluation en voiture</strong><small>PDF · 168 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/2.2%20PROCEDE%20D'EVALUATION%20ORDINATEUR.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Procédé d'évaluation sur ordinateur</strong><small>PDF · 148 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/2.3%20PROCEDE%20DE%20POSITIONNEMENT.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Procédé de positionnement</strong><small>PDF · 121 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/2.4%20MODALITES%20DE%20PRISE%20EN%20COMPTE%20DU%20HANDICAP.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Modalités de prise en compte du handicap (suite)</strong><small>PDF · 84 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="mc-doc-card" href="/Documents%20-%20label%20qualit%C3%A9/3.1%20MODALITE%20D'ORGANISATION.pdf" download>
+                        <span class="mc-doc-icon mc-doc-pdf"><i class="fa-solid fa-file-pdf"></i></span>
+                        <span class="mc-doc-info"><strong>Modalités d'organisation</strong><small>PDF · 154 Ko</small></span>
+                        <span class="mc-doc-dl"><i class="fa-solid fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Documents qualité End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

@@ -1,0 +1,106 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Mentions légales",
+					"item": "https://mcconduite.fr/mentions-legales"
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Mentions légales — MC Conduite Échirolles"}
+	description={"Mentions légales du site de l'auto-école MC Conduite à Échirolles : éditeur, SIRET, agrément préfectoral, directrice de la publication et hébergeur."}
+	keywords={"MC Conduite Échirolles, auto-école Échirolles"}
+	path={"/mentions-legales"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Mentions légales</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Mentions légales</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+<!-- Legal Content Start -->
+    <div class="page-courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="mc-legal">
+                        <h2>Éditeur du site</h2>
+                        <p>Le présent site est édité par l'auto-école <strong>MC Conduite</strong>.</p>
+                        <ul class="mc-formation-list">
+                            <li><strong>Raison sociale :</strong> MC Conduite</li>
+                            <li><strong>Adresse :</strong> 26 avenue du 8 mai 1945, 38130 Échirolles</li>
+                            <li><strong>Téléphone :</strong> <a href="tel:+33438214802">04 38 21 48 02</a></li>
+                            <li><strong>Email :</strong> <a href="mailto:mcconduiteechirolles@gmail.com">mcconduiteechirolles@gmail.com</a></li>
+                            <li><strong>SIRET :</strong> 99 365 935 00017</li>
+                            <li><strong>Code APE :</strong> 85.53Z (Enseignement de la conduite)</li>
+                            <li><strong>Agrément préfectoral :</strong> E2603800020</li>
+                            <li><strong>Directrice de la publication :</strong> Sabrina Boulahdjar</li>
+                        </ul>
+
+                        <h2>Hébergement</h2>
+                        <p>Le site est hébergé par <strong>Cloudflare, Inc.</strong> — 101 Townsend Street, San Francisco, CA 94107, États-Unis — <a href="https://www.cloudflare.com" target="_blank" rel="noopener">cloudflare.com</a>.</p>
+
+                        <h2>Propriété intellectuelle</h2>
+                        <p>L'ensemble des contenus de ce site (textes, logo, images, éléments graphiques, structure) est la propriété de MC Conduite ou de ses partenaires et est protégé par le droit de la propriété intellectuelle. Toute reproduction, représentation, modification ou diffusion, totale ou partielle, sans autorisation écrite préalable, est interdite.</p>
+
+                        <h2>Responsabilité</h2>
+                        <p>MC Conduite s'efforce d'assurer l'exactitude des informations diffusées sur ce site, mais ne saurait être tenue responsable des erreurs, omissions ou d'une indisponibilité temporaire du site. Les informations relatives aux formations, tarifs et délais sont communiquées à titre indicatif et sont précisées lors de votre inscription.</p>
+
+                        <h2>Liens</h2>
+                        <p>Ce site peut contenir des liens vers des sites tiers (réseaux sociaux, services de cartographie). MC Conduite n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.</p>
+
+                        <p>Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter via la page <a href="/contact">Contact</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Legal Content End -->
+
+    <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

@@ -1,0 +1,209 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Permis Moto",
+					"item": "https://mcconduite.fr/permis-moto"
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Permis Moto à Grenoble — AM, A1, A2, A L5e | MC Conduite Échirolles"}
+	description={"Permis moto avec MC Conduite : code moto (ETM), permis AM, A1, A2 et A L5e. Piste d'entraînement dédiée au parking Alpexpo à Grenoble, en petit effectif. Tarifs sur demande."}
+	keywords={"permis moto Grenoble, permis A2, permis A1, permis AM, piste moto Alpexpo, MC Conduite Échirolles"}
+	path={"/permis-moto"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Permis moto à Échirolles</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Permis Moto</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+    <!-- Page Courses Start -->
+    <div class="page-courses">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Permis Moto</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Roulez en deux-roues en toute sécurité</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Du cyclomoteur à la moto, MC Conduite vous forme à tous les permis deux-roues : AM, A1, A2 et A L5e, ainsi que le code moto. Nos exercices de plateau se déroulent sur une piste dédiée près de Grenoble, en petit effectif, avec une équipe spécialisée.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/code-moto">Code moto (ETM)</a></h2>
+                                <p>L'épreuve théorique moto, spécifique au deux-roues, préparée en salle et en ligne.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/code-moto" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/course-image-1.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/course-image-1.jpg" alt="Code moto ETM"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-1.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/permis-am">Permis AM</a></h2>
+                                <p>Dès 14 ans : scooter et cyclomoteur 50 cm³, formation de 8 heures.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/permis-am" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/course-image-2.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/course-image-2.jpg" alt="Permis AM scooter"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-2.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/permis-a1">Permis A1</a></h2>
+                                <p>Dès 16 ans : motos jusqu'à 125 cm³, plateau et circulation.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/permis-a1" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/course-image-3.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/course-image-3.jpg" alt="Permis A1 125 cm³"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-3.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/permis-a2">Permis A2</a></h2>
+                                <p>Dès 18 ans : motos limitées à 35 kW, avec passerelle vers le permis A.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/permis-a2" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/course-image-4.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/course-image-4.jpg" alt="Permis A2"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-4.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="/permis-a-l5e">Permis A L5e</a></h2>
+                                <p>La catégorie 3 roues : une formation adaptée aux véhicules L5e.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="/permis-a-l5e" class="readmore-btn">En savoir plus</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/course-image-1.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/course-image-1.jpg" alt="Permis A L5e 3 roues"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-1.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="course-item wow fadeInUp mc-piste-card" data-wow-delay="0.4s">
+                        <div class="course-item-header">
+                            <div class="course-item-content">
+                                <h2><a href="#piste">Notre piste moto</a></h2>
+                                <p>Parking Alpexpo à Grenoble, à 5–10 min de l'agence. 6 participants max par session.</p>
+                            </div>
+                            <div class="course-item-btn"><a href="#piste" class="readmore-btn">La piste</a></div>
+                        </div>
+                        <div class="course-item-image-box">
+                            <div class="course-item-image"><figure class="image-anime"><picture><source srcset="/images/course-image-2.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/course-image-2.jpg" alt="Piste moto Alpexpo Grenoble"></picture></figure></div>
+                            <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-2.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloc Piste Start -->
+            <div class="row section-row" id="piste" style="margin-top:30px;">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">La piste moto</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Une piste d'entraînement dédiée près de Grenoble</h2>
+                    </div>
+                    <ul class="mc-formation-list">
+                        <li><strong>Lieu :</strong> parking ALPEXPO, 2 avenue d'Innsbruck, 38100 Grenoble</li>
+                        <li><strong>Distance :</strong> à 5 à 10 minutes de l'agence d'Échirolles</li>
+                        <li><strong>Effectif :</strong> 6 participants maximum par session, pour un suivi de qualité</li>
+                        <li><strong>Équipement requis :</strong> casque homologué, gants, chaussures couvrant les chevilles, blouson adapté et pantalon type « jean » au minimum</li>
+                    </ul>
+                    <div class="google-map-iframe wow fadeInUp" style="margin-top:20px;border-radius:10px;overflow:hidden;">
+                        <iframe src="https://maps.google.com/maps?q=Alpexpo%2C%202%20avenue%20d%27Innsbruck%2C%2038100%20Grenoble&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Piste moto Alpexpo Grenoble" style="width:100%;height:340px;border:0;"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloc Piste End -->
+
+            <div class="row" style="margin-top:40px;">
+                <div class="col-lg-12">
+                    <div class="section-footer-text section-satisfy-img wow fadeInUp" style="text-align:center;">
+                        <p><strong>Tarifs sur demande.</strong> Contactez-nous pour connaître les disponibilités de piste et obtenir un devis personnalisé. <a href="/contact">Faire ma pré-inscription</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Courses End -->
+
+        <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

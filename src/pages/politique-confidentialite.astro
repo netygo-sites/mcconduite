@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Politique de confidentialité",
+					"item": "https://mcconduite.fr/politique-confidentialite"
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Politique de confidentialité — MC Conduite"}
+	description={"Politique de confidentialité de MC Conduite : données collectées via le formulaire de pré-inscription, finalités, durée de conservation, vos droits RGPD et cookies."}
+	keywords={"MC Conduite Échirolles, auto-école Échirolles"}
+	path={"/politique-confidentialite"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Politique de confidentialité</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Politique de confidentialité</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+<!-- Legal Content Start -->
+    <div class="page-courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="mc-legal">
+                        <p>MC Conduite attache une grande importance à la protection de vos données personnelles. La présente politique explique quelles données nous collectons, pourquoi, et quels sont vos droits, conformément au Règlement Général sur la Protection des Données (RGPD).</p>
+
+                        <h2>Responsable du traitement</h2>
+                        <p>Le responsable du traitement est l'auto-école MC Conduite, 26 avenue du 8 mai 1945, 38130 Échirolles — <a href="mailto:mcconduiteechirolles@gmail.com">mcconduiteechirolles@gmail.com</a>.</p>
+
+                        <h2>Données collectées</h2>
+                        <p>Via le formulaire de pré-inscription, nous collectons les données que vous nous transmettez : civilité, nom, prénom, date de naissance, adresse email, numéro de téléphone, formation souhaitée et le contenu de votre message.</p>
+
+                        <h2>Finalités du traitement</h2>
+                        <p>Ces données sont utilisées uniquement pour : traiter votre demande de pré-inscription, vous recontacter, et vous accompagner dans votre parcours de formation. Elles ne sont jamais vendues à des tiers.</p>
+
+                        <h2>Destinataires et sous-traitants</h2>
+                        <p>Vos données sont destinées à l'équipe de MC Conduite. Pour acheminer votre demande, le formulaire fait appel à des prestataires techniques qui n'utilisent vos données pour aucun autre usage :</p>
+                        <ul>
+                            <li><strong>NETYGO</strong>, qui réalise et maintient ce site et son service de formulaires ;</li>
+                            <li><strong>Cloudflare, Inc.</strong>, qui héberge le site, protège le formulaire avec son service Turnstile et stocke les messages dans l'Union européenne ;</li>
+                            <li><strong>Resend</strong> (Plus Five Five, Inc.), qui transmet votre demande par email à l'auto-école et vous envoie un accusé de réception.</li>
+                        </ul>
+
+                        <h2>Durée de conservation</h2>
+                        <p>Vos données sont conservées le temps nécessaire au traitement de votre demande puis, le cas échéant, pendant la durée de votre formation et conformément aux obligations légales applicables. La copie de votre message gardée par le service de formulaires est supprimée au bout de 12 mois.</p>
+
+                        <h2>Vos droits</h2>
+                        <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition au traitement de vos données, ainsi que d'un droit à la portabilité. Pour exercer ces droits, contactez-nous à <a href="mailto:mcconduiteechirolles@gmail.com">mcconduiteechirolles@gmail.com</a>. Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr).</p>
+
+                        <h2>Cookies</h2>
+                        <p>Ce site peut utiliser des cookies strictement nécessaires à son fonctionnement et, le cas échéant, des cookies de mesure d'audience ou liés aux contenus tiers (carte Google Maps, réseaux sociaux). Lors de l'envoi du formulaire, le service Turnstile de Cloudflare vérifie que vous n'êtes pas un robot ; il est utilisé uniquement à des fins de sécurité.</p>
+
+                        <p>Pour toute question relative à vos données, rendez-vous sur la page <a href="/contact">Contact</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Legal Content End -->
+
+    <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

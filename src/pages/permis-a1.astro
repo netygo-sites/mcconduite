@@ -1,0 +1,175 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Permis Moto",
+					"item": "https://mcconduite.fr/permis-moto"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Permis A1",
+					"item": "https://mcconduite.fr/permis-a1"
+				}
+			]
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Quelles motos puis-je conduire avec le permis A1 ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Les motos légères jusqu'à 125 cm³, avec une puissance limitée à 11 kW, dès 16 ans."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Où se déroule la formation pratique ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Les exercices de plateau ont lieu sur notre piste dédiée, au parking d'Alpexpo à Grenoble, à 5 à 10 minutes de l'agence, en petit effectif (6 participants maximum)."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Quels sont les tarifs ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Nos tarifs sont communiqués sur demande. Contactez-nous pour un devis et les disponibilités de piste."
+					}
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Permis A1 (moto 125 cm³) — MC Conduite Échirolles"}
+	description={"Permis A1 dès 16 ans avec MC Conduite : motos jusqu'à 125 cm³, plateau et circulation, piste d'entraînement à Grenoble (Alpexpo). Tarifs sur demande."}
+	keywords={"auto-école Échirolles, permis Grenoble, MC Conduite"}
+	path={"/permis-a1"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Permis A1</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item"><a href="/permis-moto">Permis Moto</a></li><li class="breadcrumb-item active" aria-current="page">Permis A1</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+<!-- Page Course Single Start -->
+    <div class="page-course-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="page-single-sidebar">
+                        <div class="page-category-list wow fadeInUp">
+                            <h3>Nos formations Moto</h3>
+                            <ul>
+                                <li><a href="/code-moto">Code moto (ETM)</a></li>
+                                <li><a href="/permis-am">Permis AM</a></li>
+                                <li><a href="/permis-a1">Permis A1</a></li>
+                                <li><a href="/permis-a2">Permis A2</a></li>
+                                <li><a href="/permis-a-l5e">Permis A L5e</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="sidebar-cta-header"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-headphone-accent.svg" alt=""></div><div class="sidebar-cta-header-content"><h3>Appelez-nous : <a href="tel:+33438214802">04 38 21 48 02</a></h3></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="course-single-content">
+                        <div class="page-single-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/header-bg.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/header-bg.jpg" alt="Permis A1 (moto 125 cm³) à Échirolles"></picture></figure></div>
+
+                        <div class="course-entry">
+                            <p class="wow fadeInUp">Accessible dès 16 ans, le permis A1 autorise la conduite des motos légères jusqu'à 125 cm³ (puissance limitée à 11 kW). Chez MC Conduite, la formation associe le code moto, l'épreuve de plateau (maniabilité) et l'épreuve de circulation.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Les exercices de plateau se déroulent sur notre piste d'entraînement dédiée, sur le parking d'Alpexpo à Grenoble, à 5 à 10 minutes de l'agence, en petit effectif (6 participants maximum).</p>
+
+                            <div class="course-info-box">
+                                <h2 class="text-anime-style-3">L'essentiel du permis A1</h2>
+                                <p class="wow fadeInUp">Une formation complète pour rouler en 125 cm³ en toute sécurité.</p>
+                                <div class="course-info-item-list">
+                                    <div class="course-info-item wow fadeInUp" data-wow-delay="0.2s"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-info-item-1.svg" alt=""></div><div class="course-info-item-content"><h3>Dès 16 ans</h3><p>Motos jusqu'à 125 cm³ (11 kW maximum).</p></div></div>
+                                    <div class="course-info-item wow fadeInUp" data-wow-delay="0.4s"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-info-item-2.svg" alt=""></div><div class="course-info-item-content"><h3>Plateau &amp; circulation</h3><p>Deux épreuves : maniabilité (plateau) puis circulation.</p></div></div>
+                                </div>
+                                <div class="course-info-images">
+                                    <div class="course-info-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-road.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-road.jpg" alt="Route ouverte"></picture></figure></div>
+                                    <div class="course-info-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/interieur-2.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/interieur-2.jpg" alt="Agence MC Conduite"></picture></figure></div>
+                                </div>
+                            </div>
+
+                            <div class="course-types-box">
+                                <h2 class="text-anime-style-3">À qui s'adresse le permis A1</h2>
+                                <p class="wow fadeInUp">Idéal pour débuter la moto dès 16 ans, ou rouler en 125 cm³ avec un permis B sous conditions.</p>
+                                <div class="course-type-item-list">
+                                    <div class="course-type-item">
+                                        <div class="course-type-content-box wow fadeInUp"><div class="course-type-item-header"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-type-1.svg" alt=""></div><div class="course-type-no"><h3>01</h3></div></div><div class="course-type-item-body"><h3>Jeunes dès 16 ans</h3><p>Pour découvrir la moto avec une cylindrée accessible.</p><ul><li>Motos jusqu'à 125 cm³</li></ul></div></div>
+                                        <div class="course-type-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/header-bg.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/header-bg.jpg" alt="Conduite moto"></picture></figure></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-single-faqs">
+                            <div class="section-title"><h2 class="text-anime-style-3" data-cursor="-opaque">Questions fréquentes</h2><p class="wow fadeInUp">Les réponses aux questions les plus courantes sur le permis A1.</p></div>
+                            <div class="faq-accordion" id="accordion">
+                                <div class="accordion-item wow fadeInUp"><h2 class="accordion-header" id="heading1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Quelles motos puis-je conduire avec le permis A1 ?</button></h2><div id="collapse1" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1" data-bs-parent="#accordion"><div class="accordion-body"><p>Les motos légères jusqu'à 125 cm³, avec une puissance limitée à 11 kW, dès 16 ans.</p></div></div></div>
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s"><h2 class="accordion-header" id="heading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Où se déroule la formation pratique ?</button></h2><div id="collapse2" class="accordion-collapse collapse" role="region" aria-labelledby="heading2" data-bs-parent="#accordion"><div class="accordion-body"><p>Les exercices de plateau ont lieu sur notre piste dédiée, au parking d'Alpexpo à Grenoble, à 5 à 10 minutes de l'agence, en petit effectif (6 participants maximum).</p></div></div></div>
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s"><h2 class="accordion-header" id="heading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Quels sont les tarifs ?</button></h2><div id="collapse3" class="accordion-collapse collapse" role="region" aria-labelledby="heading3" data-bs-parent="#accordion"><div class="accordion-body"><p>Nos tarifs sont communiqués sur demande. Contactez-nous pour un devis et les disponibilités de piste.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Course Single End -->
+
+
+
+    <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

@@ -2,17 +2,36 @@
 
 Site vitrine personnalisé à partir du template **AutoGuru**, pour l'auto-moto-école **MC Conduite** (Échirolles).
 
-## Pages livrées (9)
-- `index.html` — Accueil
-- `permis-b.html` — Permis B (code, manuelle, automatique, AAC, supervisée, post-permis)
-- `permis-moto.html` — Permis Moto (code moto, AM, A1, A2, A L5e) + bloc piste Alpexpo
-- `label-qualite.html` — Label qualité
-- `contact.html` — Contact + formulaire de pré-inscription + carte
-- `mentions-legales.html`, `politique-confidentialite.html`, `reglement-interieur.html` — pages légales (liens en footer)
-- `404.html` — page d'erreur
+## Technique (depuis octobre 2026)
+Site **Astro** statique, hébergé sur **Cloudflare Pages** (projet `mcconduite`, build `npm run build`, sortie `dist/`).
+Auparavant : pages HTML écrites à la main, hébergées sur Vercel (historique git conservé).
+
+```bash
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # génère les CSS puis le site dans dist/
+```
+
+| Dossier | Contenu |
+|---|---|
+| `src/pages/` | Une page par fichier (`contact.astro` → `/contact`) : titre, description et données structurées en tête, contenu dessous |
+| `src/layouts/Base.astro` | `<head>` commun (SEO, polices, styles), préchargeur, scripts |
+| `src/components/` | En-tête (bandeau, menu) et pied de page, communs à toutes les pages |
+| `src/styles/custom.css` | **Source des styles** (avec Bootstrap, slicknav et Font Awesome à côté) |
+| `scripts/build-css.mjs` | Purge et fusionne les styles → `public/css/site.css` + styles de la partie haute intégrés aux pages. Lancé tout seul par `dev` et `build` : ne jamais modifier les fichiers générés |
+| `public/` | Images, scripts (`js/function.js` = script du site), polices, documents du label, `robots.txt`, `sitemap.xml`, `llms.txt` |
+| `functions/videos/` | Sert la vidéo du héros par morceaux (Safari l'exige, Pages ne le fait pas seul) |
+
+**Adresses** : les pages n'ont plus d'extension (`/contact`). Cloudflare Pages redirige de lui-même les anciennes adresses en `.html`.
+En ajoutant une page : l'ajouter aussi dans `public/sitemap.xml` et, si utile, `public/llms.txt`.
+
+## Pages (21)
+- Accueil, Permis B, Permis Moto, Tarifs, Label qualité, Contact (formulaire de pré-inscription + carte)
+- 11 fiches formation : code de la route, boîte manuelle, boîte automatique, conduite accompagnée, conduite supervisée, post-permis, code moto, permis AM, A1, A2, A L5e
+- Mentions légales, politique de confidentialité, règlement intérieur, page 404
 
 ## Identité visuelle
-- Couleurs définies dans `css/custom.css` (bloc « MC CONDUITE - Personnalisations marque » en fin de fichier) :
+- Couleurs définies dans `src/styles/custom.css` (bloc « MC CONDUITE - Personnalisations marque » en fin de fichier) :
   - Noir `#1A1A1A` + dégradé or/orange `#F5A623 → #E8830C`
 - Logo : `images/mc/logo-mc-conduite-white.png` (header/footer, fond sombre) et `logo-mc-conduite.png` (fond clair)
 - Photos clientes optimisées dans `images/mc/`
@@ -30,7 +49,8 @@ Site vitrine personnalisé à partir du template **AutoGuru**, pour l'auto-moto-
 10. **Règlement intérieur** : version synthétisée en ligne ; possibilité d'ajouter le PDF officiel en téléchargement.
 
 ## Formulaire de pré-inscription
-- `contact.html` : le formulaire a `action="#"`. Le branchement de l'envoi (PHP `form-process.php` du template, ou solution Netygo) reste à connecter sur le serveur de production. La validation côté client (champs requis + RGPD) est active.
+Envoyé au **service de formulaires NETYGO** (`netygo-forms`, entrée `mc-conduite`) : aucun code serveur dans le site.
+Adresse d'envoi et clé publique Turnstile dans `src/data/site.ts`, envoi dans `public/js/function.js` (champ piège, horodatage, vérification anti-robot invisible). Destinataires, accusé de réception et libellés du mail se règlent dans le service, pas ici.
 
 ## Données société (vérifiées dans le doc client)
 - Adresse : 26 avenue du 8 mai 1945, 38130 Échirolles · Tél : 04 38 21 48 02

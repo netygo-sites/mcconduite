@@ -1,0 +1,95 @@
+---
+/**
+ * Gabarit commun : <head> (SEO, polices, styles), préchargeur, en-tête, pied de page et scripts.
+ * Les styles de la partie haute sont intégrés dans la page (src/styles/critical.css), la feuille
+ * complète (public/css/site.css) arrive sans bloquer l'affichage : voir scripts/build-css.mjs.
+ */
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import critical from '../styles/critical.css?raw';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  /** Adresse de la page, sans domaine : « / », « /contact »… */
+  path: string;
+  noindex?: boolean;
+  /** Image du haut de page à précharger (accueil) */
+  preloadImage?: string;
+  /** Données structurées : un élément par balise <script type="application/ld+json"> */
+  jsonLd?: unknown[];
+}
+
+const { title, description, keywords, path, noindex = false, preloadImage, jsonLd = [] } = Astro.props;
+const url = new URL(path, Astro.site).href;
+const image = new URL('/images/mc/devanture.jpg', Astro.site).href;
+const fonts = 'https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap';
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{description && <meta name="description" content={description}>}
+	{keywords && <meta name="keywords" content={keywords}>}
+	<meta name="author" content="MC Conduite">
+	{noindex && <meta name="robots" content="noindex">}
+	<title>{title}</title>
+	{preloadImage && <link rel="preload" as="image" href={preloadImage} type="image/webp" fetchpriority="high">}
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href={fonts} media="print" onload="this.media='all';this.onload=null">
+	<noscript><link rel="stylesheet" href={fonts}></noscript>
+	<style is:inline set:html={critical}></style>
+	<link rel="preload" href="/css/site.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="/css/site.css"></noscript>
+	<link rel="stylesheet" href="/css/animate.css" media="print" onload="this.media='all';this.onload=null">
+	<noscript><link rel="stylesheet" href="/css/animate.css"></noscript>
+	{jsonLd.map((data) => <script type="application/ld+json" is:inline set:html={JSON.stringify(data)}></script>)}
+	<link rel="canonical" href={url}>
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="MC Conduite">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:title" content={title}>
+	{description && <meta property="og:description" content={description}>}
+	<meta property="og:url" content={url}>
+	<meta property="og:image" content={image}>
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content={title}>
+	{description && <meta name="twitter:description" content={description}>}
+	<meta name="twitter:image" content={image}>
+</head>
+<body>
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img loading="lazy" decoding="async" src="/images/loader.svg" alt=""></div>
+		</div>
+	</div>
+
+	<Header />
+	<slot />
+	<Footer />
+
+	<script is:inline defer src="/js/jquery-3.7.1.min.js"></script>
+	<script is:inline defer src="/js/bootstrap.min.js"></script>
+	<script is:inline defer src="/js/validator.min.js"></script>
+	<script is:inline defer src="/js/jquery.slicknav.js"></script>
+	<script is:inline defer src="/js/jquery.waypoints.min.js"></script>
+	<script is:inline defer src="/js/jquery.counterup.min.js"></script>
+	<script is:inline defer src="/js/parallaxie.js"></script>
+	<script is:inline defer src="/js/gsap.min.js"></script>
+	<script is:inline defer src="/js/SplitText.min.js"></script>
+	<script is:inline defer src="/js/ScrollTrigger.min.js"></script>
+	<script is:inline defer src="/js/wow.min.js"></script>
+	<script is:inline defer src="/js/function.js"></script>
+</body>
+</html>

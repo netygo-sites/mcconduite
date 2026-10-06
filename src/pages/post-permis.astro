@@ -1,0 +1,181 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Permis B",
+					"item": "https://mcconduite.fr/permis-b"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Stage post-permis",
+					"item": "https://mcconduite.fr/post-permis"
+				}
+			]
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Qui peut suivre le stage post-permis ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Les titulaires d'un premier permis (A1, A2, B1 ou B), entre le 6e et le 12e mois suivant son obtention. Le stage est réservé aux conducteurs novices."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "De combien ma période probatoire est-elle réduite ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "D'un an : de 3 à 2 ans pour un permis B traditionnel, et de 2 ans à 1 an et demi si vous avez suivi la conduite accompagnée (AAC)."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Pourquoi le faire chez MC Conduite ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Le stage ne peut être dispensé que par une auto-école labellisée. MC Conduite détient ce label qualité et peut donc vous proposer cette formation. Découvrir notre démarche qualité."
+					}
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Stage post-permis à Échirolles — MC Conduite"}
+	description={"Stage post-permis (7 h) à Échirolles avec MC Conduite, auto-école labellisée : réduisez votre période probatoire d'un an. Public concerné et conditions. Tarifs sur demande."}
+	keywords={"auto-école Échirolles, permis Grenoble, MC Conduite"}
+	path={"/post-permis"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Stage post-permis</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item"><a href="/permis-b">Permis B</a></li><li class="breadcrumb-item active" aria-current="page">Stage post-permis</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+<!-- Page Course Single Start -->
+    <div class="page-course-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="page-single-sidebar">
+                        <div class="page-category-list wow fadeInUp">
+                            <h3>Nos formations Permis B</h3>
+                            <ul>
+                                <li><a href="/code-de-la-route">Code de la route</a></li>
+                                <li><a href="/boite-manuelle">Boîte manuelle</a></li>
+                                <li><a href="/boite-automatique">Boîte automatique</a></li>
+                                <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a></li>
+                                <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
+                                <li><a href="/post-permis">Post-permis</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="sidebar-cta-header"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-headphone-accent.svg" alt=""></div><div class="sidebar-cta-header-content"><h3>Appelez-nous : <a href="tel:+33438214802">04 38 21 48 02</a></h3></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="course-single-content">
+                        <div class="page-single-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-road.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-road.jpg" alt="Stage post-permis à Échirolles"></picture></figure></div>
+
+                        <div class="course-entry">
+                            <p class="wow fadeInUp">Le stage post-permis est une formation complémentaire d'une journée (7 heures), réservée aux jeunes conducteurs. En tant qu'auto-école labellisée, MC Conduite est habilitée à vous le proposer : il vous permet de réduire votre période probatoire d'un an.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Mis en place depuis le 1er janvier 2019, ce dispositif vise à susciter une réflexion sur les comportements au volant et la perception des risques, au moment où le conducteur novice gagne en assurance — une période où le risque d'accident est le plus élevé.</p>
+
+                            <div class="course-info-box">
+                                <h2 class="text-anime-style-3">Le bénéfice : une période probatoire réduite</h2>
+                                <p class="wow fadeInUp">Une journée d'échanges encadrée par un enseignant spécialement formé, pour gagner une année de période probatoire.</p>
+                                <div class="course-info-item-list">
+                                    <div class="course-info-item wow fadeInUp" data-wow-delay="0.2s"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-info-item-1.svg" alt=""></div><div class="course-info-item-content"><h3>Permis B : 3 ans → 2 ans</h3><p>La période probatoire d'un permis B traditionnel passe de 3 à 2 ans.</p></div></div>
+                                    <div class="course-info-item wow fadeInUp" data-wow-delay="0.4s"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-info-item-2.svg" alt=""></div><div class="course-info-item-content"><h3>AAC : 2 ans → 1 an et demi</h3><p>Pour un novice ayant suivi la conduite accompagnée, la période passe de 2 ans à 1 an et demi.</p></div></div>
+                                </div>
+                                <div class="course-info-images">
+                                    <div class="course-info-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/logo-mural.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/logo-mural.jpg" alt="MC Conduite, auto-école labellisée"></picture></figure></div>
+                                    <div class="course-info-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/interieur-1.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/interieur-1.jpg" alt="Formation post-permis en salle"></picture></figure></div>
+                                </div>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">La formation est collective, pour favoriser les échanges entre conducteurs d'une même génération sur leurs premières expériences de conduite.</p>
+                            </div>
+
+                            <div class="course-types-box">
+                                <h2 class="text-anime-style-3">Public concerné &amp; conditions</h2>
+                                <p class="wow fadeInUp">Le stage post-permis s'adresse exclusivement aux conducteurs novices, dans une fenêtre précise.</p>
+                                <div class="course-type-item-list">
+                                    <div class="course-type-item">
+                                        <div class="course-type-content-box wow fadeInUp"><div class="course-type-item-header"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-type-1.svg" alt=""></div><div class="course-type-no"><h3>01</h3></div></div><div class="course-type-item-body"><h3>Jeunes conducteurs</h3><p>Titulaires d'un premier permis (A1, A2, B1 ou B).</p><ul><li>Formation d'une journée (7 heures)</li></ul></div></div>
+                                        <div class="course-type-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-faq.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-faq.jpg" alt="Jeune conducteur"></picture></figure></div>
+                                    </div>
+                                    <div class="course-type-item">
+                                        <div class="course-type-content-box wow fadeInUp" data-wow-delay="0.2s"><div class="course-type-item-header"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-type-2.svg" alt=""></div><div class="course-type-no"><h3>02</h3></div></div><div class="course-type-item-body"><h3>Entre le 6e et le 12e mois</h3><p>À suivre entre 6 et 12 mois après l'obtention du permis, ni avant, ni après.</p><ul><li>Dispensé uniquement par les auto-écoles labellisées</li></ul></div></div>
+                                        <div class="course-type-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-road.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-road.jpg" alt="Conducteur novice sur route"></picture></figure></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-single-faqs">
+                            <div class="section-title"><h2 class="text-anime-style-3" data-cursor="-opaque">Questions fréquentes</h2><p class="wow fadeInUp">Les réponses aux questions les plus courantes sur le stage post-permis.</p></div>
+                            <div class="faq-accordion" id="accordion">
+                                <div class="accordion-item wow fadeInUp"><h2 class="accordion-header" id="heading1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Qui peut suivre le stage post-permis ?</button></h2><div id="collapse1" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1" data-bs-parent="#accordion"><div class="accordion-body"><p>Les titulaires d'un premier permis (A1, A2, B1 ou B), entre le 6e et le 12e mois suivant son obtention. Le stage est réservé aux conducteurs novices.</p></div></div></div>
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s"><h2 class="accordion-header" id="heading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">De combien ma période probatoire est-elle réduite ?</button></h2><div id="collapse2" class="accordion-collapse collapse" role="region" aria-labelledby="heading2" data-bs-parent="#accordion"><div class="accordion-body"><p>D'un an : de 3 à 2 ans pour un permis B traditionnel, et de 2 ans à 1 an et demi si vous avez suivi la conduite accompagnée (AAC).</p></div></div></div>
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s"><h2 class="accordion-header" id="heading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Pourquoi le faire chez MC Conduite ?</button></h2><div id="collapse3" class="accordion-collapse collapse" role="region" aria-labelledby="heading3" data-bs-parent="#accordion"><div class="accordion-body"><p>Le stage ne peut être dispensé que par une auto-école labellisée. MC Conduite détient ce label qualité et peut donc vous proposer cette formation. <a href="/label-qualite">Découvrir notre démarche qualité</a>.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Course Single End -->
+
+
+
+    <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

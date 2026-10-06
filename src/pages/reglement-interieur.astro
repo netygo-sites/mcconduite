@@ -1,0 +1,108 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Règlement intérieur",
+					"item": "https://mcconduite.fr/reglement-interieur"
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Règlement intérieur — MC Conduite Échirolles"}
+	description={"Règlement intérieur de l'auto-école MC Conduite : dispositions générales, hygiène et sécurité, discipline, tenue, équipement deux-roues et horaires d'ouverture."}
+	keywords={"MC Conduite Échirolles, auto-école Échirolles"}
+	path={"/reglement-interieur"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Règlement intérieur</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Règlement intérieur</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+<!-- Legal Content Start -->
+    <div class="page-courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="mc-legal">
+                        <h2>I. Préambule</h2>
+                        <p>L'auto-école <strong>MC Conduite</strong> est un organisme de formation domicilié 26 avenue du 8 mai 1945, 38130 Échirolles. Le présent règlement intérieur précise les dispositions s'appliquant aux participants des différentes formations organisées par l'auto-école, afin d'en permettre un fonctionnement régulier. L'auto-école y est désignée comme « organisme de formation », les personnes en formation comme « stagiaires », et le directeur de la formation comme « responsable de l'organisme ».</p>
+
+                        <h2>II. Dispositions générales</h2>
+                        <p><strong>Article 1.</strong> Conformément aux articles du Code du travail applicables, ce règlement définit les règles générales et permanentes, précise la réglementation en matière d'hygiène et de sécurité, ainsi que les règles relatives à la discipline, les sanctions applicables et les droits des stagiaires.</p>
+
+                        <h2>III. Champ d'application</h2>
+                        <p><strong>Article 2 — Personnes concernées.</strong> Le règlement s'applique à tous les stagiaires inscrits, pour toute la durée de leur formation. Tout stagiaire est réputé l'avoir accepté en suivant une formation dispensée par l'auto-école.</p>
+                        <p><strong>Article 3 — Lieu de la formation.</strong> Les dispositions s'appliquent dans les locaux de l'auto-école ainsi que dans tout local ou espace accessoire à l'organisme (dont la piste d'entraînement moto).</p>
+
+                        <h2>IV. Hygiène et sécurité</h2>
+                        <p><strong>Article 4 — Règles générales.</strong> Sur les lieux de formation et à bord des véhicules, l'élève doit se conformer aux instructions des formateurs concernant la sécurité, et veiller à sa sécurité comme à celle des autres.</p>
+                        <p><strong>Article 5 — Boissons alcoolisées et stupéfiants.</strong> Il est interdit de pénétrer ou de séjourner dans l'organisme ou à bord des véhicules en état d'ivresse ou sous l'emprise de stupéfiants, ou d'y introduire des boissons alcoolisées.</p>
+                        <p><strong>Article 6 — Interdiction de fumer.</strong> Il est interdit de fumer dans les locaux de formation.</p>
+                        <p><strong>Article 7 — Lieux de restauration.</strong> Sauf autorisation, il est interdit de prendre ses repas dans les salles de formation.</p>
+                        <p><strong>Article 8 — Consignes d'incendie.</strong> Les consignes d'incendie, le plan des extincteurs et des issues de secours sont affichés dans les locaux. Chaque élève doit en prendre connaissance et participer aux exercices d'évacuation.</p>
+                        <p><strong>Article 9 — Accident.</strong> Tout accident ou incident survenu pendant la formation doit être immédiatement déclaré au responsable de l'organisme.</p>
+
+                        <h2>V. Discipline</h2>
+                        <p><strong>Article 10 — Tenue et comportement.</strong> Les stagiaires se présentent en tenue décente et adaptée et adoptent un comportement correct. Pour la catégorie B : chaussures adaptées (talons hauts et tongs interdits) et vêtements permettant l'aisance des mouvements. Pour les formations deux-roues : équipement homologué obligatoire (casque, gants, chaussures couvrant les chevilles), blouson adapté et pantalon de type « jean » au minimum.</p>
+                        <p><strong>Article 11 — Téléphone portable.</strong> Les téléphones portables doivent être éteints pendant la formation, en salle comme en véhicule.</p>
+                        <p><strong>Article 12 — Horaires.</strong> Les horaires sont communiqués aux stagiaires (convocation ou programme de formation). En cas d'absence ou de retard, le stagiaire prévient le formateur, le responsable ou le secrétariat. Une fiche de présence est signée pour chaque séance.</p>
+
+                        <h2>Horaires et jours d'ouverture</h2>
+                        <ul class="mc-formation-list">
+                            <li><strong>Formation théorique :</strong> du lundi au vendredi, 9h–12h et 14h–18h ; samedi 10h–14h</li>
+                            <li><strong>Cours pratiques :</strong> du lundi au vendredi, 7h–18h ; samedi 10h–14h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Legal Content End -->
+
+    <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

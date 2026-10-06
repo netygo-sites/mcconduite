@@ -1,0 +1,196 @@
+---
+import Base from '../layouts/Base.astro';
+
+const jsonLd = [
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://mcconduite.fr/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Permis B",
+					"item": "https://mcconduite.fr/permis-b"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Permis B — boîte manuelle",
+					"item": "https://mcconduite.fr/boite-manuelle"
+				}
+			]
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Combien d'heures de conduite faut-il prévoir ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Le volume est défini après votre évaluation de départ, selon votre aisance et votre progression. La formation minimale légale est de 20 heures, souvent davantage pour aborder l'examen en confiance."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Quelle différence avec la boîte automatique ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Le permis boîte manuelle autorise la conduite de tous les véhicules B. Le permis boîte automatique (B78) ne concerne que les véhicules automatiques, mais la formation est souvent plus rapide. En savoir plus sur la boîte automatique."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Quels sont les tarifs ?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Nos tarifs sont communiqués sur demande, en fonction de votre parcours. Contactez-nous pour un devis personnalisé et sans engagement."
+					}
+				}
+			]
+		}
+	]
+];
+---
+<Base
+	title={"Permis B boîte manuelle à Échirolles — MC Conduite"}
+	description={"Permis B en boîte manuelle à Échirolles avec MC Conduite : du code à l'examen, un parcours complet encadré par des moniteurs à l'écoute. Tarifs sur demande."}
+	keywords={"auto-école Échirolles, permis Grenoble, MC Conduite"}
+	path={"/boite-manuelle"}
+	jsonLd={jsonLd}
+>
+	<main id="contenu">
+	<!-- Header End -->
+
+    <!-- Page Header Section Start -->
+    <div class="page-header bg-section dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1>Permis B — boîte manuelle</h1>
+                        <nav>
+                            <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Accueil</a></li><li class="breadcrumb-item"><a href="/permis-b">Permis B</a></li><li class="breadcrumb-item active" aria-current="page">Permis B — boîte manuelle</li></ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+<!-- Page Course Single Start -->
+    <div class="page-course-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="page-single-sidebar">
+                        <div class="page-category-list wow fadeInUp">
+                            <h3>Nos formations Permis B</h3>
+                            <ul>
+                                <li><a href="/code-de-la-route">Code de la route</a></li>
+                                <li><a href="/boite-manuelle">Boîte manuelle</a></li>
+                                <li><a href="/boite-automatique">Boîte automatique</a></li>
+                                <li><a href="/conduite-accompagnee">Conduite accompagnée (AAC)</a></li>
+                                <li><a href="/conduite-supervisee">Conduite supervisée</a></li>
+                                <li><a href="/post-permis">Post-permis</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="sidebar-cta-header">
+                                <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-headphone-accent.svg" alt=""></div>
+                                <div class="sidebar-cta-header-content"><h3>Appelez-nous : <a href="tel:+33438214802">04 38 21 48 02</a></h3></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="course-single-content">
+                        <div class="page-single-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-permis-b.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-permis-b.jpg" alt="Formation au permis B boîte manuelle à Échirolles"></picture></figure></div>
+
+                        <div class="course-entry">
+                            <p class="wow fadeInUp">Le permis B en boîte manuelle est la formation de référence chez MC Conduite, à Échirolles. Vous apprenez à maîtriser l'embrayage et le passage des vitesses, et vous obtenez un permis qui vous autorise à conduire l'ensemble des véhicules de la catégorie B, manuels comme automatiques.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Du code à l'examen, votre parcours est encadré par des moniteurs expérimentés et bienveillants. Le volume d'heures est défini après une évaluation de départ, en fonction de votre progression, pour vous présenter prêt(e) le jour de l'examen.</p>
+
+                            <div class="course-info-box">
+                                <h2 class="text-anime-style-3">Le déroulé de la formation</h2>
+                                <p class="wow fadeInUp">Une progression claire, étape par étape, avec un suivi personnalisé tout au long de votre apprentissage.</p>
+                                <div class="course-info-item-list">
+                                    <div class="course-info-item wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-info-item-1.svg" alt=""></div>
+                                        <div class="course-info-item-content"><h3>Évaluation &amp; code</h3><p>Évaluation de départ pour estimer votre volume, puis préparation et passage du code.</p></div>
+                                    </div>
+                                    <div class="course-info-item wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-info-item-2.svg" alt=""></div>
+                                        <div class="course-info-item-content"><h3>Conduite &amp; examen</h3><p>Maîtrise de l'embrayage et des vitesses, circulation réelle, parcours d'examen et bilan.</p></div>
+                                    </div>
+                                </div>
+                                <div class="course-info-images">
+                                    <div class="course-info-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-auto.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-auto.jpg" alt="Leçon de conduite MC Conduite"></picture></figure></div>
+                                    <div class="course-info-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-faq.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-faq.jpg" alt="Élève au volant"></picture></figure></div>
+                                </div>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Avec un permis boîte manuelle, vous pouvez conduire tous les véhicules de la catégorie B : une polyvalence totale, idéale si vous ne savez pas encore quel type de véhicule vous conduirez.</p>
+                            </div>
+
+                            <div class="course-types-box">
+                                <h2 class="text-anime-style-3">À qui s'adresse cette formation</h2>
+                                <p class="wow fadeInUp">Le permis B boîte manuelle convient à tous les profils qui souhaitent une liberté totale dans le choix de leur véhicule.</p>
+                                <div class="course-type-item-list">
+                                    <div class="course-type-item">
+                                        <div class="course-type-content-box wow fadeInUp">
+                                            <div class="course-type-item-header"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-type-1.svg" alt=""></div><div class="course-type-no"><h3>01</h3></div></div>
+                                            <div class="course-type-item-body"><h3>Nouveaux conducteurs</h3><p>Pour une formation complète et polyvalente, du débutant au candidat à l'examen.</p><ul><li>Conduite de tous les véhicules de catégorie B</li></ul></div>
+                                        </div>
+                                        <div class="course-type-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-permis-b.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-permis-b.jpg" alt="Nouveau conducteur"></picture></figure></div>
+                                    </div>
+                                    <div class="course-type-item">
+                                        <div class="course-type-content-box wow fadeInUp" data-wow-delay="0.2s">
+                                            <div class="course-type-item-header"><div class="icon-box"><img loading="lazy" decoding="async" src="/images/icon-course-type-2.svg" alt=""></div><div class="course-type-no"><h3>02</h3></div></div>
+                                            <div class="course-type-item-body"><h3>Conduite accompagnée</h3><p>La boîte manuelle se combine parfaitement avec l'AAC dès 15 ans.</p><ul><li>Idéal pour gagner en expérience</li></ul></div>
+                                        </div>
+                                        <div class="course-type-image"><figure class="image-anime reveal"><picture><source srcset="/images/mc/photo-aac.webp" type="image/webp"><img loading="lazy" decoding="async" src="/images/mc/photo-aac.jpg" alt="Conduite accompagnée"></picture></figure></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-single-faqs">
+                            <div class="section-title"><h2 class="text-anime-style-3" data-cursor="-opaque">Questions fréquentes</h2><p class="wow fadeInUp">Les réponses aux questions les plus courantes sur le permis B en boîte manuelle.</p></div>
+                            <div class="faq-accordion" id="accordion">
+                                <div class="accordion-item wow fadeInUp"><h2 class="accordion-header" id="heading1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Combien d'heures de conduite faut-il prévoir ?</button></h2><div id="collapse1" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1" data-bs-parent="#accordion"><div class="accordion-body"><p>Le volume est défini après votre évaluation de départ, selon votre aisance et votre progression. La formation minimale légale est de 20 heures, souvent davantage pour aborder l'examen en confiance.</p></div></div></div>
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s"><h2 class="accordion-header" id="heading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Quelle différence avec la boîte automatique ?</button></h2><div id="collapse2" class="accordion-collapse collapse" role="region" aria-labelledby="heading2" data-bs-parent="#accordion"><div class="accordion-body"><p>Le permis boîte manuelle autorise la conduite de tous les véhicules B. Le permis boîte automatique (B78) ne concerne que les véhicules automatiques, mais la formation est souvent plus rapide. <a href="/boite-automatique">En savoir plus sur la boîte automatique</a>.</p></div></div></div>
+                                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s"><h2 class="accordion-header" id="heading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Quels sont les tarifs ?</button></h2><div id="collapse3" class="accordion-collapse collapse" role="region" aria-labelledby="heading3" data-bs-parent="#accordion"><div class="accordion-body"><p>Nos tarifs sont communiqués sur demande, en fonction de votre parcours. Contactez-nous pour un devis personnalisé et sans engagement.</p></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Course Single End -->
+
+
+
+    <!-- Avis Google FAB Start -->
+    <a class="mc-review-fab" href="https://www.google.com/maps/place/AUTO+ECOLE+MC+CONDUITE/@45.1441566,5.7100222,1331m/data=!3m1!1e3!4m18!1m9!3m8!1s0x478a8b3f6db3fce7:0x4d184686cf363037!2sAUTO+ECOLE+MC+CONDUITE!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4!3m7!1s0x478a8b3f6db3fce7:0x4d184686cf363037!8m2!3d45.1457321!4d5.7167138!9m1!1b1!16s%2Fg%2F11z21tx4g4" target="_blank" rel="noopener" aria-label="Laisser un avis sur Google">
+        <img loading="lazy" decoding="async" src="/images/icon-google.svg" alt="Google">
+        <span class="mc-review-fab-text"><strong>Laissez votre avis</strong><span class="mc-review-fab-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></span>
+    </a>
+    <!-- Avis Google FAB End -->
+    <!-- Back To Top Start -->
+    <a href="#top" class="mc-backtotop" aria-label="Remonter en haut de la page"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Back To Top End -->
+
+    </main>
+</Base>

@@ -1,9 +1,19 @@
+# Sortie du build et fichiers générés
+dist/
+.astro/
+.wrangler/
+# Feuilles de styles générées par scripts/build-css.mjs (à chaque dev et build)
+public/css/site.css
+src/styles/critical.css
+
+node_modules/
+.env
+.env.production
+
 # OS / éditeurs
 .DS_Store
 Thumbs.db
 desktop.ini
 *.log
-
-# Dossiers d'outils
 .vscode/
 .idea/
